@@ -1,0 +1,19 @@
+ body {
+    background-color: rgb(118, 180, 189);
+} 
+
+header {
+    background-color: rgb(94, 189, 181);
+    font-size: 60pt;
+    text-align: center;
+    color: rgb(131, 228, 235);
+}
+
+main {
+    background-color: aqua;
+    color: rgb(105, 226, 235);
+}
+
+footer {
+    background-color: rgb(87, 223, 228);
+}

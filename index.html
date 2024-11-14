@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGR-Turismo </title>
+
+    <!-- Link para o Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Barra de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+
+            <div class="d-flex justify-content-center w-200">
+                <a href="index.html" class="navbar-brand mx-auto">
+                    <img src="img/ataata.png" alt="Logo" width="200" height="100">
+                </a>
+            </div>
+
+
+            <a class="navbar-brand" href="#">AGR-Turismo </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home"><i class="bi bi-house"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#destinos">Destinos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+    </nav> <!-- Fechamento da Navbar -->
+
+    <!-- Seção Destinos -->
+    <section id="destinos" class="container py-5">
+        <img src="img/agr.png" class="d-block w-100" alt="Imagem 1">
+        <h2 class="text-center mb-4">Destinos Imperdíveis</h2>
+        <div class="row"><!-- Destino 1: Balneário Camboriú -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/no.jpg" class="card-img-top" alt="Balneário Camboriú - SC">
+                    <div class="card-body">
+                        <h5 class="card-title">Balneário Camboriú - SC</h5>
+                        <p class="card-text">
+                            <strong>Valores:</strong><br>
+                            R$ 2.100,00 por pessoa (em apartamento duplo)<br>
+                            R$ 2.700,00 por pessoa (em apartamento individual)<br>
+                            <strong>Duração:</strong> 6 dias / 5 noites
+                        </p>
+                        <!-- Trigger Modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modalBalnearioCamboriu">
+                            Conferir
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Destino 2: Rio de Janeiro -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/jr.jfif" class="card-img-top" alt="Rio de Janeiro">
+                    <div class="card-body">
+                        <h5 class="card-title">Rio de Janeiro - RJ</h5>
+                        <p class="card-text">
+                            <strong>Valores:</strong><br>
+                            R$ 2.500,00 por pessoa (em apartamento duplo)<br>
+                            R$ 3.200,00 por pessoa (em apartamento individual)<br>
+                            <strong>Duração:</strong> 5 dias / 4 noites
+                        </p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modalRioDeJaneiro">
+                            Conferir
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Destino 3: Salvador -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/64dd548b5df7f097127484.png" class="card-img-top" alt="Salvador">
+                    <div class="card-body">
+                        <h5 class="card-title">Salvador</h5>
+                        <p class="card-text">
+                            <strong>Valores:</strong><br>
+                            R$ 2.300,00 por pessoa (em apartamento duplo)<br>
+                            R$ 2.900,00 por pessoa (em apartamento individual)<br>
+                            <strong>Duração:</strong> 5 dias / 4 noites
+                        </p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modalSalvador">
+                            Conferir
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Destino 4: Bonito -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/bonit.jpg" class="card-img-top" alt="Bonito">
+                    <div class="card-body">
+                        <h5 class="card-title">Bonito</h5>
+                        <p class="card-text">
+                            <strong>Valores:</strong><br>
+                            R$ 2.100,00 por pessoa (em apartamento duplo)<br>
+                            R$ 2.700,00 por pessoa (em apartamento individual)<br>
+                            <strong>Duração:</strong> 6 dias / 5 noites
+                        </p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modalBonito">
+                            Conferir
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Destino 5: Ouro Preto -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/ouro preto (1).jfif" class="card-img-top" alt="Ouro Preto">
+                    <div class="card-body">
+                        <h5 class="card-title">Ouro Preto</h5>
+                        <p class="card-text">
+                            <strong>Valores:</strong><br>
+                            R$ 1.800,00 por pessoa (em apartamento duplo)<br>
+                            R$ 2.300,00 por pessoa (em apartamento individual)<br>
+                            <strong>Duração:</strong> 4 dias / 3 noites
+                        </p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modalOuroPreto">
+                            Conferir
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Destino 6: Jalapão -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/jalapao-cachoeira-da-velha.jpg.webp" class="card-img-top" alt="Jalapão">
+                    <div class="card-body">
+                        <h5 class="card-title">Jalapão</h5>
+                        <p class="card-text">
+                            <strong>Valores:</strong><br>
+                            R$ 3.500,00 por pessoa (em apartamento duplo)<br>
+                            R$ 4.200,00 por pessoa (em apartamento individual)<br>
+                            <strong>Duração:</strong> 6 dias / 5 noites
+                        </p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modalJalapao">
+                            Conferir
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Destino 7: Lençóis Maranhenses -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/lençois maranhenses.jfif" class="card-img-top" alt="Lençóis Maranhenses">
+                    <div class="card-body">
+                        <h5 class="card-title">Lençóis Maranhenses</h5>
+                        <p class="card-text">
+                            <strong>Valores:</strong><br>
+                            R$ 2.200,00 por pessoa (em apartamento duplo)<br>
+                            R$ 2.700,00 por pessoa (em apartamento individual)<br>
+                            <strong>Duração:</strong> 4 dias / 3 noites
+                        </p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modalLencoisMaranhenses">
+                            Conferir
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Destino 8: Pontal-do-Atalaia -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/Praias-do-Pontal-do-Atalaia-870x500.jpg" class="card-img-top" alt="Pontal-do-Atalaia">
+                    <div class="card-body">
+                        <h5 class="card-title">Pontal-do-Atalaia</h5>
+                        <p class="card-text">
+                            <strong>Valores:</strong><br>
+                            R$ 2.300,00 por pessoa (em apartamento duplo)<br>
+                            R$ 2.800,00 por pessoa (em apartamento individual)<br>
+                            <strong>Duração:</strong> 5 dias / 4 noites
+                        </p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modalPontalDoAtalaia">
+                            Conferir
+
+                        </button>
+                    </div>
+                </div>
+            </div> <!-- Fechamento correto do Destino 8 -->
+
+            <!-- Destino 9: Santos -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/spiagge-santos-praia-pitangueiras.jpg.image.694.390.low.webp" class="card-img-top"
+                        alt="Santos">
+                    <div class="card-body">
+                        <h5 class="card-title">Santos</h5>
+                        <p class="card-text">
+                            <strong>Valores:</strong><br>
+                            R$ 1.600,00 por pessoa (em apartamento duplo)<br>
+                            R$ 2.000,00 por pessoa (em apartamento individual)<br>
+                            <strong>Duração:</strong> 4 dias / 3 noites
+                        </p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modalSantos">
+                            Conferir
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- Fechamento correto da div do destino Santos -->
+
+        <!-- Modal Santos -->
+        <div class="modal fade" id="modalSantos" tabindex="-1" aria-labelledby="modalSantosLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalSantosLabel">Santos</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Santos, cidade histórica e com um dos maiores portos do Brasil, combina cultura, história e
+                        lazer à beira-mar.
+                        Explore o famoso Museu do Café, o Centro Histórico de Santos, e desfrute de momentos de
+                        relaxamento nas suas praias,
+                        como a Praia do Gonzaga e a Praia de Itararé. Para quem busca um mix entre turismo cultural e
+                        praias tranquilas, este pacote é a escolha perfeita.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Balneário Camboriú -->
+        <div class="modal fade" id="modalBalnearioCamboriu" tabindex="-1" aria-labelledby="modalBalnearioCamboriuLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalBalnearioCamboriuLabel">Balneário Camboriú</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Aproveite as praias e a vida noturna de Balneário Camboriú com um pacote que combina
+                        relaxamento, diversão e passeios turísticos. Visite o Parque Unipraias, que oferece uma vista
+                        incrível da cidade e acesso à Praia de Laranjeiras, além de curtir a orla e a vibrante Avenida
+                        Atlântica.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Rio de Janeiro -->
+        <div class="modal fade" id="modalRioDeJaneiro" tabindex="-1" aria-labelledby="modalRioDeJaneiroLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalRioDeJaneiroLabel">Rio de Janeiro</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Explore a cidade maravilhosa com um tour completo pelos principais pontos turísticos do Rio de
+                        Janeiro.
+                        Visite o Cristo Redentor, o Pão de Açúcar, as belas praias de Copacabana e Ipanema,
+                        além de passeios pelo bairro de Santa Teresa e o famoso Estádio do Maracanã.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Salvador -->
+        <div class="modal fade" id="modalSalvador" tabindex="-1" aria-labelledby="modalSalvadorLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalSalvadorLabel">Salvador</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Mergulhe na cultura baiana com um tour que explora o centro histórico de Salvador,
+                        a tradicional Igreja do Bonfim, o Pelourinho e o Mercado Modelo. Experimente a culinária local,
+                        com acarajé,
+                        moqueca e outros pratos típicos. Também inclui um passeio ao encantador bairro de Barra e um dia
+                        de lazer nas praias paradisíacas de Salvador.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Bonito -->
+        <div class="modal fade" id="modalBonito" tabindex="-1" aria-labelledby="modalBonitoLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalBonitoLabel">Bonito</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Viva a experiência única em Bonito, no Mato Grosso do Sul, famoso por suas águas cristalinas,
+                        cavernas e grutas. O pacote inclui passeios para o Parque das Cachoeiras, flutuação no Rio da
+                        Prata, e visita à Gruta do Lago Azul.
+                        Uma viagem de imersão na natureza exuberante da região.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Ouro Preto -->
+        <div class="modal fade" id="modalOuroPreto" tabindex="-1" aria-labelledby="modalOuroPretoLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalOuroPretoLabel">Ouro Preto</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Explore a rica história e arquitetura colonial de Ouro Preto, cidade tombada pela UNESCO. Visite
+                        igrejas
+                        barrocas como a Igreja de São Francisco de Assis, a Mina da Passagem, e o Museu da
+                        Inconfidência.
+                        Aproveite também para passear por suas ruas de pedras e curtir o charme da cidade.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Jalapão -->
+        <div class="modal fade" id="modalJalapao" tabindex="-1" aria-labelledby="modalJalapaoLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalJalapaoLabel">Jalapão</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Aventure-se no Jalapão, um dos destinos mais selvagens e remotos do Brasil. Com paisagens
+                        impressionantes de dunas douradas,
+                        cachoeiras e fervedouros, o pacote inclui visitas à Cachoeira de Santa Bárbara, Fervedouro do
+                        Ceiça,
+                        e passeio pelas dunas de Mateiros. Uma verdadeira imersão na natureza intocada do Tocantins.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Lençóis Maranhenses -->
+        <div class="modal fade" id="modalLencoisMaranhenses" tabindex="-1"
+            aria-labelledby="modalLencoisMaranhensesLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLencoisMaranhensesLabel">Lençóis Maranhenses</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Explore o paraíso natural dos Lençóis Maranhenses, famoso pelas suas dunas de areia branca e
+                        lagoas de águas cristalinas.
+                        O pacote inclui passeio pelo Parque Nacional dos Lençóis Maranhenses,
+                        com visita à Lagoa Bonita, Lagoa Azul e passeio de barco pelo Rio Preguiças.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Pontal-do-Atalaia -->
+        <div class="modal fade" id="modalPontalDoAtalaia" tabindex="-1" aria-labelledby="modalPontalDoAtalaiaLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalPontalDoAtalaiaLabel">Pontal-do-Atalaia</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Pontal do Atalaia, localizado em Arraial do Cabo, é famoso por suas praias paradisíacas e águas
+                        cristalinas, perfeitas para quem ama o mar.
+                        Este pacote oferece o melhor do ecoturismo e das atividades aquáticas, como passeio de barco
+                        pelas praias de Prainha,
+                        Praia do Forno, e as deslumbrantes vistas do Mirante do Pontal do Atalaia. Ideal para quem busca
+                        relaxar e se conectar com a natureza em
+                        um dos cenários mais bonitos do Brasil.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+
+        </div>
+
+        </div>
+        </div>
+
+        <!DOCTYPE html>
+        <html lang="pt-br">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>AGR-Turismo</title>
+
+            <!-- Links do Bootstrap -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+                rel="stylesheet">
+
+            <!-- Adicionar seu CSS personalizado aqui -->
+            <link rel="stylesheet" href="styles.css">
+        </head>
+
+        <body>
+
+
+            <!-- Seção Sobre -->
+            <section id="sobre" class="bg-light py-5">
+                <div class="container text-center">
+                    <h2>Sobre o AGR-Turismo</h2>
+                    <p>Explore os melhores destinos turísticos do Brasil com nosso guia completo. Aqui você encontrará
+                        informações sobre as melhores praias, montanhas, cultura e gastronomia.</p>
+                </div>
+            </section>
+
+            <!-- Seção de Contato -->
+            <section id="contato" class="container py-5">
+                <h2 class="text-center mb-4">Entre em Contato</h2>
+                <form action="enviar-mensagem.php" method="POST">
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="nome" name="nome" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="destino" class="form-label">Destino de Interesse</label>
+                        <select class="form-select" id="destino" name="destino" required>
+                            <option value="" disabled selected>Escolha um destino</option>
+                            <option value="Balneário Camboriú">Balneário Camboriú</option>
+                            <option value="Rio de Janeiro">Rio de Janeiro</option>
+                            <option value="Salvador">Salvador</option>
+                            <option value="Bonito">Bonito</option>
+                            <option value="Ouro Preto">Ouro Preto</option>
+                            <option value="Jalapão">Jalapão</option>
+                            <option value="Lençóis Maranhenses">Lençóis Maranhenses</option>
+                            <option value="Pontal do Atalaia">Pontal do Atalaia</option>
+                            <option value="Santos">Santos</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensagem" class="form-label">Mensagem</label>
+                        <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </section>
+
+            <!-- Rodapé -->
+            <footer class="bg-dark text-white text-center py-4">
+                <p>&copy; 2024 AGR-Turismo. Todos os direitos reservados.</p>
+                <p>
+                    <a href="https://facebook.com/agr-turismo" target="_blank" class="text-white">Facebook</a> |
+                    <a href="https://instagram.com/agr-turismo" target="_blank" class="text-white">Instagram</a> |
+                    <a href="https://twitter.com/agr-turismo" target="_blank" class="text-white">Twitter</a>
+                </p>
+            </footer>
+
+            <!-- Scripts do Bootstrap -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+        </body>
+
+        </html>
