@@ -541,40 +541,59 @@
     </div>
 </section>
 <!-- Seção de Contato -->
-<section id="contato" class="container py-5">
-  <h2 class="text-center mb-4">Entre em Contato</h2>
-  <form action="enviar-mensagem.php" method="POST" id="formContato">
-      <div class="mb-3">
-          <label for="nome" class="form-label">Nome</label>
-          <input type="text" class="form-control" id="nome" name="nome" required>
+<form class="row g-3 needs-validation" novalidate>
+  <div class="col-md-4 position-relative">
+    <label for="validationTooltip01" class="form-label">First name</label>
+    <input type="text" class="form-control" id="validationTooltip01" value="Mark" required>
+    <div class="valid-tooltip">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-4 position-relative">
+    <label for="validationTooltip02" class="form-label">Last name</label>
+    <input type="text" class="form-control" id="validationTooltip02" value="Otto" required>
+    <div class="valid-tooltip">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-4 position-relative">
+    <label for="validationTooltipUsername" class="form-label">Username</label>
+    <div class="input-group has-validation">
+      <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+      <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+      <div class="invalid-tooltip">
+        Please choose a unique and valid username.
       </div>
-      <div class="mb-3">
-          <label for="email" class="form-label">E-mail</label>
-          <input type="email" class="form-control" id="email" name="email" required>
-      </div>
-      <div class="mb-3">
-          <label for="destino" class="form-label">Destino de Interesse</label>
-          <select class="form-select" id="destino" name="destino" required>
-              <option value="" disabled selected>Escolha um destino</option>
-              <option value="Balneário Camboriú">Balneário Camboriú</option>
-              <option value="Rio de Janeiro">Rio de Janeiro</option>
-              <option value="Salvador">Salvador</option>
-              <option value="Bonito">Bonito</option>
-              <option value="Ouro Preto">Ouro Preto</option>
-              <option value="Jalapão">Jalapão</option>
-              <option value="Lençóis Maranhenses">Lençóis Maranhenses</option>
-              <option value="Pontal do Atalaia">Pontal do Atalaia</option>
-              <option value="Santos">Santos</option>
-          </select>
-      </div>
-      <div class="mb-3">
-          <label for="mensagem" class="form-label">Mensagem</label>
-          <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required></textarea>
-      </div>
-      <!-- Botão Enviar -->
-      <button type="submit" class="btn btn-primary" id="btnEnviar">Enviar</button>
-  </form>
-</section>
+    </div>
+  </div>
+  <div class="col-md-6 position-relative">
+    <label for="validationTooltip03" class="form-label">City</label>
+    <input type="text" class="form-control" id="validationTooltip03" required>
+    <div class="invalid-tooltip">
+      Please provide a valid city.
+    </div>
+  </div>
+  <div class="col-md-3 position-relative">
+    <label for="validationTooltip04" class="form-label">State</label>
+    <select class="form-select" id="validationTooltip04" required>
+      <option selected disabled value="">Choose...</option>
+      <option>...</option>
+    </select>
+    <div class="invalid-tooltip">
+      Please select a valid state.
+    </div>
+  </div>
+  <div class="col-md-3 position-relative">
+    <label for="validationTooltip05" class="form-label">Zip</label>
+    <input type="text" class="form-control" id="validationTooltip05" required>
+    <div class="invalid-tooltip">
+      Please provide a valid zip.
+    </div>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </div>
+</form>
 
 <!-- Modal de Sucesso -->
 <div class="modal fade" id="modalSucesso" tabindex="-1" aria-labelledby="modalSucessoLabel" aria-hidden="true">
